@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <!---Red Hat 500-->
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap" rel="stylesheet">
+<!--Red Hat 700-->
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@700&display=swap" rel="stylesheet">
+<!--Red Hat 900-->
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body {
+      background-color: hsl(225, 100%, 94%);
+      align-items: center;
+      justify-content: center;
+    }
+    h1 {
+      font-weight: 700;
+    }
+    #description {
+      font-weight: 500;
+      font-size: 16px;
+      color: hsl(224, 23%, 55%);
+    }
+    .card {
+      border-radius: 25px;
+      background-color: white;
+      display: grid;
+      text-align: center;
+      width: 450px;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+      font-family: 'Red Hat Display', sans-serif;
+      box-shadow: 0 8px 6px -6px black;
+    }
+    #hero {
+      border-radius: 25px 25px 0 0;
+    }
+    .plan {
+      display: flex;
+      justify-content: space-evenly;
+      padding-bottom: 40px;
+    }
+    .plan-payment {
+      display: grid;
+    }
+    b {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+    p {
+      font-size: 16px;
+    }
+    button {
+      margin-left: auto;
+      margin-right: auto;
+      background-color: hsl(245, 75%, 52%);
+      color: white;
+      width: 80%;
+      border-radius: 15px;
+      cursor: pointer;
+      font-family: 'Red Hat Display', sans-serif;
+      box-shadow: 0 8px 6px -6px black;
+    }
+    button:hover {
+      opacity: 0.6;
+      transition: 0.4s;
+    }
+    #change:hover {
+      opacity: 0.6;
+    }
+    #cancel-order:hover {
+      color: hsl(223, 47%, 23%);
+    }
+    button p {
+      font-weight: 700;
+      font-size: 16px;
+    }
+    #music {
+      width: 25%;
+    }
+    #change {
+      color: hsl(245, 75%, 52%);
+    }
+    #cancel-order {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      color:hsl(224, 23%, 55%);
+      text-decoration: none;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<div class="card">
+  <img id="hero" src="images/illustration-hero.svg" />
+  <h1>Order Summary</h1>
+
+  <p id="description">You can now listen to millions of songs, audiobooks, and podcasts on any 
+  device anywhere you like!</p>
+
+<section class="plan">
+  <img id="music" src="images/icon-music.svg" />
+  <div class="plan-payment">
+  <h1>Annual Plan</h1>
+  <p>$59.99/year</p>
+  </div>
+  <b id="change">Change</b>
+</section>
+  <button><p>Proceed to Payment</p></button>
+  <b id="cancel-order">Cancel Order</b>
+</div>  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="github.com/JBoundless">Jordan Pagkalinawan</a>.
+  </div>
+</body>
+</html>
